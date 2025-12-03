@@ -7,8 +7,8 @@ The server launches in your default browser, shows you a QR code for mobile conn
 
 This README covers the usage of these two files:
 
-- **og_share.py** — the main Python web server   
-- **og_share.bat** — the Windows launcher that starts the server automatically :contentReference[oaicite:1]{index=1}
+- **og_share.py** — the main Python web server  
+- **og_share.bat** — the Windows launcher that starts the server automatically
 
 ---
 
@@ -87,7 +87,7 @@ Handles:
 - Secure path handling  
 - Remote shutdown  
 
-📄 Source: `og_share.py` 
+📄 Source: `og_share.py`
 
 ---
 
@@ -96,21 +96,20 @@ Windows launcher for the project.
 
 Double-click to:
 - run the Python script  
-- launch browser to correct URL  
-- auto-start server  
+- launch the browser  
+- auto-start the server  
 
-📄 Source: `og_share.bat` :contentReference[oaicite:3]{index=3}
+📄 Source: `og_share.bat`
 
 ---
 
 # 🖥️ How to Run
 
 ### ✔️ Step 1 — Make Sure Python 3 Is Installed
-Run:
 ```
 python --version
 ```
-If not installed, install from python.org.
+If not installed, get it from python.org.
 
 ---
 
@@ -124,7 +123,7 @@ yourfolder/
 
 ---
 
-### ✔️ Step 3 — Double-Click og_share.bat
+### ✔️ Step 3 — Double-Click `og_share.bat`
 The app will:
 1. Start the server  
 2. Open your browser  
@@ -138,61 +137,58 @@ That's it. No commands needed.
 # 📱 How to Use (Laptop ↔ Mobile)
 
 ### **On Your Laptop**
-- Add files → view uploaded files  
-- Download files to your computer  
-- Delete files  
-- Stop the server from the UI  
+- Drag & drop to upload  
+- Download files  
+- Delete unwanted files  
+- Stop server from UI  
 
 ### **On Your Phone**
 - Scan QR  
 - Same interface opens  
-- Upload files to your laptop  
-- Download files from your laptop  
+- Upload files to laptop  
+- Download files from laptop  
 
-Everything happens instantly on Wi-Fi.
+Everything works instantly over Wi-Fi.
 
 ---
 
 # 📁 File Storage
 
 All files go into:
+
 ```
 shared/
 ```
 
 Created automatically next to the script.
 
-Files in this folder = visible in browser  
-Files removed from this folder = disappear from browser  
+- Files inside appear in browser  
+- Removing them removes them from UI  
 
 ---
 
 # ⚠️ Security Notes
 
-- Server runs on **local Wi-Fi** only.  
-- Anyone on the same network **with the URL** can access shared files.  
-- Do **not** run on public networks (cafes, airports, hotels).  
-- Designed for home / trusted environments.
+- Runs on **local Wi-Fi** only  
+- Anyone with the IP **on the same network** can access files  
+- Avoid using this on public Wi-Fi  
+- Intended for personal / trusted environments  
 
 ---
 
 # 🛠️ Troubleshooting
 
-### ❓ Server doesn’t open in browser
-Open manually:
+### ❓ Browser doesn’t open?
+Visit manually:
 ```
 http://<your-ip>:8000/
 ```
-Example:
-```
-http://192.168.1.5:8000/
-```
 
-### ❓ Port already in use  
-Close other apps using port **8000**, or change the port in `og_share.py`.
+### ❓ Port 8000 is busy?
+Change port inside `og_share.py`.
 
-### ❓ Missing modules  
-They will auto-install. If not, run manually:
+### ❓ Modules not installed?
+Run:
 ```
 pip install flask qrcode pillow
 ```
@@ -203,10 +199,10 @@ pip install flask qrcode pillow
 
 Free to use. Free to modify. Free to distribute.
 
-Make it yours.
-
 ---
 
 # ❤️ Author
-This README was generated specifically for your implementation and workflow.
+
+Made with ❤️ by **Shahil Khan**  
+YouTube Channel 👉 https://www.youtube.com/@OfGuru
 

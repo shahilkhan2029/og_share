@@ -1,0 +1,34 @@
+==========================
+OG SHARE - INSTRUCTIONS
+
+https://www.youtube.com/@OfGuru
+==========================
+
+1. Make sure Python is installed.
+   Check with:
+   python --version
+
+2. Keep these two files together:
+   - og_share.py
+   - og_share.bat
+
+3. Double-click og_share.bat to start the app.
+
+4. Your browser will open automatically.
+   - Scan the QR code on your phone to connect.
+   - Or open the displayed URL (e.g., http://192.168.x.x:8000).
+
+5. To share files:
+   - Drag & drop files or click the upload area.
+   - Files appear automatically in the interface.
+
+6. To download files:
+   - Click the file name or the Download button.
+
+7. To stop the server:
+   - Click "Stop Server" in the top-right corner.
+   - Or close the terminal window.
+
+8. All shared files are stored in the "shared" folder created automatically.
+
+That's it. Enjoy simple file sharing!
